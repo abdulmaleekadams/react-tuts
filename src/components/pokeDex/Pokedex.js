@@ -17,15 +17,17 @@ const Pokedex = ({
   return (
     <div className="pokedex">
       <h1>Pokedex!</h1>
-      {pokemon.map((p, idx) => (
-        <PokeCard
-          key={idx}
-          name={p.name}
-          type={p.type}
-          exp={p.base_experience}
-          id={p.id}
-        />
-      ))}
+      <div className="pokedexCards">
+        {pokemon.map((p, idx) => (
+          <PokeCard
+            key={idx}
+            name={p.name}
+            type={p.type}
+            exp={p.base_experience}
+            id={p.id}
+          />
+        ))}
+      </div>
     </div>
   );
 };
