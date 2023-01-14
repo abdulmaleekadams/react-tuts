@@ -11,7 +11,9 @@ const PokeCard = ({ name, id, type, exp }) => {
   return (
     <div className="pokecard">
       <h1 className="pokecardTitle">{name}</h1>
-      <img src={imageSrc} alt={name} />
+      <div className="pokecardImage">
+        <img src={imageSrc} alt={name} />
+      </div>
       <div className="pokecardData">Type: {type}</div>
       <div className="pokecardData">EXP: {exp}</div>
     </div>
